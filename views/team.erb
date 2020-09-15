@@ -5,8 +5,10 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
+    <h1>Team Name: <%= @team_name %></h1>
+    <% @team_array.each do |position| %>
+        <h2><%= position[0] %>: <%= position[1] %></h2>
+    <% end %>
 
  </body>
 </html>
